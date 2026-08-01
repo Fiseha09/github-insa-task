@@ -92,7 +92,6 @@ function deleteTask(id) {
     renderTasks();
 }
 
-addBtn.addEventListener("click", () => addTask(taskInput.value));
 
 taskForm.addEventListener("submit", (event) => {
     event.preventDefault();
