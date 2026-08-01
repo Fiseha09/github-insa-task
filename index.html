@@ -4,53 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Task Dashboard</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Student Task Dashboard</h1>
+        <p>Stay organized and keep your study plan moving forward.</p>
+    </header>
 
-<header>
-    <h1>Student Task Dashboard</h1>
-</header>
+    <main class="container">
+        <form class="task-box" id="taskForm">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a new task"
+                maxlength="80"
+                autocomplete="off"
+            >
+            <button id="addBtn" type="submit">Add Task</button>
+        </form>
 
-<main class="container">
+        <ul id="taskList" class="task-list" aria-live="polite"></ul>
 
-    <div class="task-box">
-        <input
-            type="text"
-            id="taskInput"
-            placeholder="Enter a new task">
+        <section class="statistics" aria-label="Task statistics">
+            <p>Total Tasks: <span id="total">0</span></p>
+            <p>Completed: <span id="completed">0</span></p>
+            <p>Remaining: <span id="remaining">0</span></p>
+        </section>
+    </main>
 
-        <button id="addBtn">Add Task</button>
-    </div>
+    <footer>
+        <p>me Fiseha : i cooked thee challenge😂</p>
+    </footer>
 
-    <ul id="taskList">
-
-    </ul>
-
-    <div class="statistics">
-
-        <p>Total Tasks:
-            <span id="total">0</span>
-        </p>
-
-        <p>Completed:
-            <span id="completed">0</span>
-        </p>
-
-        <p>Remaining:
-            <span id="remaining">0</span>
-        </p>
-
-    </div>
-
-</main>
-
-<footer>
-    <p>Frontend Challenge</p>
-</footer>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
